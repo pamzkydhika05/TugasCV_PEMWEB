@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: #1B262C;
+    color: white;
+}
+#About-me {
+    scroll-margin-top: 80px; 
+}
+
+
+
+.wrapper {
+    width: 80%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(27, 38, 44, 0.9);
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #DDE6ED;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+/* Header */
+header {
+    background: url('bg.full.jpeg') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.header-opacity {
+    background: rgba(27, 38, 44, 0.85);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.header-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: cyan;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: lightgray;
+}
+
+/* Profile Image */
+.profile-section img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid cyan;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Skills */
+#skills {
+    text-align: center;
+    padding: 50px;
+    background: rgba(44, 62, 80, 0.7);
+}
+
+#skills h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.technical-skills, .professional-skills {
+    width: 45%;
+}
+
+/* Progress Bar */
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.skill img {
+    width: 30px;
+}
+
+.progress {
+    flex: 1;
+    height: 12px;
+    background: #333;
+    border-radius: 6px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: cyan;
+    border-radius: 6px;
+    text-align: right;
+    padding-right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 12px;
+    color: black;
+}
+.banner-img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    margin-bottom: 30px; 
+}
+
+/* CV Section */
+#cvpam {
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 35%;
+    padding: 20px;
+    background: rgba(44, 62, 80, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0 0 10px cyan;
+}
+
+.contact, .education {
+    margin-top: 20px;
+}
+
+.contact h3, .education h3 {
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid cyan;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact p, .education p {
+    font-size: 14px;
+    color: #DDE6ED;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 10px;
+    width: 100%; 
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0; 
+}
+
+.contact-item p {
+    margin: 0;
+    text-align: left;
+    flex-grow: 1; 
+}
+.contact-item a {
+    color: #DDE6ED; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    color: cyan; 
+}
+
+/* Main Content */
+.content {
+    width: 65%;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: cyan;
+}
+
+.content h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: lightgray;
+}
+
+.experience h3 {
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid cyan;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.exp-item {
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 3px solid cyan;
+    position: relative;
+}
+
+.exp-item h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 1px;
+    line-height: 1.5; 
+}
+
+.exp-item p {
+    font-size: 13px;
+    color: lightgray;
+    margin: 3px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .content {
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.professional-skills {
+    text-align: center;
+}
+
+.skill-circle {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+.skill-circle svg {
+    transform: rotate(-90deg);
+}
+
+.skill-circle circle {
+    fill: none;
+    stroke-width: 8;
+}
+
+.skill-circle .background {
+    stroke: #333; 
+}
+
+.skill-circle .progress {
+    stroke: cyan; 
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.skill-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 10px;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.gallery .wide {
+    grid-column: span 2;
+}
+.gallery .tall {
+    grid-row: span 2;
+}
